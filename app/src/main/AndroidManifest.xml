@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Разрешение на камеру -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+
+        <!-- Главная активность -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Активность для сканирования QR -->
+        <activity
+            android:name=".CaptureAct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Активности для отображения результатов -->
+        <activity android:name=".HouseActivity" />
+        <activity android:name=".CarActivity" />
+        <activity android:name=".TreeActivity" />
+
+    </application>
+</manifest>
