@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Информация о студенте -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ФИО: Соловьев Александр Русланович\nГруппа: ИСиТ-333902у"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Кнопка сканирования -->
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сканировать QR код"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Инструкция -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Доступные QR коды:\n1. дом\n2. машина\n3. дерево"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>
